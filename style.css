@@ -25,6 +25,7 @@ body {
     align-items: center;
     position: relative;
     padding: 2rem; /* Added padding for better spacing */
+    background: none;
 }
 
 .contact-bg h1 {
@@ -122,7 +123,7 @@ body {
     margin-left: 15%; /* Adjusted for center alignment */
     text-align: center;
     padding: 2rem 0;
-    background: #000; /* Solid black background */
+    background: none;
 }
 
 .contact-info span {
@@ -134,7 +135,7 @@ body {
     padding: 1rem;
     position: relative;
     color: #fff;
-    background: #000; /* Solid black background */
+    background: none; /* Solid black background */
 }
 
 .contact-info span .fas {
@@ -166,7 +167,7 @@ body {
     position: relative;
     margin: 0 auto;
     max-width: 90%; /* Center the form */
-    background: #000; /* Solid black background */
+    background: none; /* Solid black background */
 }
 .contact-form h1 {
     font-size: 2rem; /* Adjust the font size as needed */
@@ -245,6 +246,7 @@ body {
     width: 70%; /* Adjusted size */
     max-width: 250px; /* Optional: Set a maximum width */
     height: auto; /* Maintain aspect ratio */
+    background: transparent;
 }
 
 .contact-form > div {
@@ -366,3 +368,28 @@ body {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+.video-bg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(4px)
+    
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ensure the contact-bg content is on top of the video */
+.contact-bg {
+    position: relative;
+    z-index: 1;
+}
+
+/* Additional styles to make sure text is readable over the video */
