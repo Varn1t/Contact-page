@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    background: #000; /* Solid black background */
+    color: #fff;
+}
+
+.contact-bg {
+    height: 40vh;
+    background: #000; /* Solid black background */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 2rem; /* Added padding for better spacing */
+    background: none;
+}
+
+.contact-bg h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffda;
+    font-size: 4rem;
+    text-shadow:
+        0 0 5px #00ffda,
+        0 0 10px #00ffda,
+        0 0 20px #00ffda;
+    position: absolute;
+    top: 1%;
+}
+
+.contact-bg h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.contact-bg h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+
+.contact-bg .neon-blue {
+    color: #00ffd4;
+    text-shadow:
+        0 0 5px #00ffd4,
+        0 0 10px #00ffd4,
+        0 0 20px #00ffd4;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.line div {
+    margin: 0 0.2rem;
+    background: #00ffd4;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #00ffd4;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(5);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(4);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 1;
+    }
+}
+
+.text {
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+.contact-bg .text {
+    margin: 1.6rem 0;
+}
+
+.contact-body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info {
+    display: flex;
+    margin: 2rem 0;
+    margin-left: 15%; /* Adjusted for center alignment */
+    text-align: center;
+    padding: 2rem 0;
+    background: none;
+}
+
+.contact-info span {
+    display: block;
+}
+
+.contact-info div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+    position: relative;
+    color: #fff;
+    background: none; /* Solid black background */
+}
+
+.contact-info span .fas {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #00ffd4; /* Changed to blue */
+}
+
+.contact-info div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff; /* White glowing effect */
+}
+
+.contact-info .text {
+    padding-top: 0.4rem;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff; /* White glowing effect */
+}
+
+.contact-form {
+    padding: 2rem 0;
+    border-top: 3px solid #00ffd4; /* Neon blue border color with 3px height */
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%; /* Center the form */
+    background: none; /* Solid black background */
+}
+.contact-form h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    color: #fff; /* Neon blue color */
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+    margin-bottom: 1rem; /* Space below the heading */
+}
+.contact-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* Adjust based on the thickness of your line */
+    background: #00ffd4; /* Neon blue color */
+    box-shadow: 0 0 10px rgba(0, 255, 212, 0.8); /* Neon glow effect */
+    z-index: -1; /* Place it behind the content */
+}
+
+.contact-form form {
+    padding-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+
+.contact-form form div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+.send-btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #00ffda;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+}
+
+.send-btn:hover {
+    opacity: 0.8;
+    background: rgb(255, 255, 255);
+    color: #00ffda;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff;
+}
+
+.contact-form > div img {
+    width: 70%; /* Adjusted size */
+    max-width: 250px; /* Optional: Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+    background: transparent;
+}
+
+.contact-form > div {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-footer {
+    padding: 2rem 0;
+    background: #000; /* Solid black background */
+}
+
+.follow-line {
+    width: 90%; /* Adjust width to match the length of the text */
+    height: 3px; /* Thickness of the line */
+    background: #00ffd4; /* Neon blue color */
+    box-shadow: 0 0 10px rgba(0, 255, 212, 0.8); /* Neon glow effect */
+    margin: 0 auto; /* Center the line */
+    margin-bottom: 1rem; /* Space between the line and heading */
+    position: relative; /* Ensure proper positioning */
+}
+
+.contact-footer {
+    padding: 2rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+    text-align: center;
+}
+
+.contact-footer h3 {
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0;
+}
+
+.contact-footer h3 .neon-blue {
+    color: #00ffd4;
+    text-shadow:
+        0 0 5px #00ffd4,
+        0 0 10px #00ffd4,
+        0 0 20px #00ffd4;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4rem;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    color: #00ffd4;
+    border-color: #00ffd4;
+}
+
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Make sure it does not overlap */
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #00ffd4;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #00ffda;
+    opacity: 0.8;
+}
+
+#backToTop i {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.video-bg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    filter: blur(3px)
+    
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ensure the contact-bg content is on top of the video */
+.contact-bg {
+    position: relative;
+    z-index: 1;
+}
+
+/* Additional styles to make sure text is readable over the video */
